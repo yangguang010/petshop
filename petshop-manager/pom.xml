@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>petshop-parent</artifactId>
+        <groupId>com.petshop.parent</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../petshop-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.petshop.manager</groupId>
+    <artifactId>petshop-manager</artifactId>
+    <packaging>pom</packaging>
+
+    <name>petshop-manager</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>petshop-manager-pojo</module>
+        <module>petshop-manager-mapper</module>
+        <module>petshop-manager-service</module>
+        <module>petshop-manager-controller</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.petshop.common</groupId>
+            <artifactId>petshop-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
