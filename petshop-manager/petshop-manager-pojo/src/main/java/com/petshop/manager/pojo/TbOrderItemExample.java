@@ -1,4 +1,4 @@
-package com.petshop.pojo;
+package com.petshop.manager.pojo;
 
 import java.util.ArrayList;
 import java.util.List;

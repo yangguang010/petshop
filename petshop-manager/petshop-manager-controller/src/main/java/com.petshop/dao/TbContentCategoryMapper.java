@@ -1,8 +1,9 @@
 package com.petshop.dao;
 
-import com.petshop.pojo.TbContentCategory;
-import com.petshop.pojo.TbContentCategoryExample;
 import java.util.List;
+
+import com.petshop.manager.pojo.TbContentCategory;
+import com.petshop.manager.pojo.TbContentCategoryExample;
 import org.apache.ibatis.annotations.Param;
 
 public interface TbContentCategoryMapper {

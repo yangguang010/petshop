@@ -1,4 +1,4 @@
-package com.petshop.pojo;
+package com.petshop.manager.pojo;
 
 public class TbOrderItem {
     /**
