@@ -9,7 +9,7 @@
 
     <groupId>com.petshop.manager</groupId>
     <artifactId>petshop-manager-mapper</artifactId>
-    <packaging>jar</packaging>
+    <packaging>jar</packaging>`
 
     <name>petshop-manager-mapper</name>
     <url>http://maven.apache.org</url>

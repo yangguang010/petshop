@@ -1,5 +1,6 @@
 package com.petshop.manager.service;
 
+import com.petshop.common.pojo.EasyUIDataGridResult;
 import com.petshop.manager.pojo.TbItem;
 
 /**
@@ -7,4 +8,7 @@ import com.petshop.manager.pojo.TbItem;
  */
 public interface ItemService {
     TbItem selectItem(Long ItemId);
+
+    EasyUIDataGridResult getItemsList(int page,int rows);
+
 }
