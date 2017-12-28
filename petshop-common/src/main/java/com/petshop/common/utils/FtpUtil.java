@@ -38,6 +38,7 @@ public class FtpUtil {
                 ftp.disconnect();
                 return result;
             }
+            /*
             //切换到上传目录
             if (!ftp.changeWorkingDirectory(basePath+filePath)) {
                 //如果目录不存在创建目录
@@ -55,6 +56,26 @@ public class FtpUtil {
                     }
                 }
             }
+            */
+            //  切换到上传目录
+            if(!ftp.changeWorkingDirectory(filename)) {
+                //如果目录不存在创建目录
+                String[] dirs = filename.split("/");
+                String tempPath = "";
+                for (String dir : dirs) {
+                    if(null == dir || "".equals(dir))
+                        continue;
+                    tempPath += "/" + dir;
+                    if(!ftp.changeWorkingDirectory(tempPath)) {
+                        if (!ftp.makeDirectory(tempPath)) {
+                            System.out.println("ERROR!");
+                        } else {
+                            ftp.changeWorkingDirectory(tempPath);
+                        }
+                    }
+                }
+            }
+
             //设置上传文件的类型为二进制类型
             ftp.setFileType(FTP.BINARY_FILE_TYPE);
             //上传文件
@@ -131,8 +152,8 @@ public class FtpUtil {
 
     public static void main(String[] args) {
         try {
-            FileInputStream in=new FileInputStream(new File("D:\\temp\\image\\gaigeming.jpg"));
-            boolean flag = uploadFile("192.168.25.133", 21, "ftpuser", "ftpuser", "/home/ftpuser/www/images","/2015/01/21", "gaigeming.jpg", in);
+            FileInputStream in=new FileInputStream(new File("C:\\1.jpg"));
+            boolean flag = uploadFile("192.168.197.128", 21, "ftpuser", "ftpuser123", "/home/ftpuser/www/images","/2017/12/28", "xuanxuan.jpg", in);
             System.out.println(flag);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
