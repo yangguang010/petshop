@@ -60,7 +60,7 @@ public class FtpUtil {
             //  切换到上传目录
             if(!ftp.changeWorkingDirectory(filename)) {
                 //如果目录不存在创建目录
-                String[] dirs = filename.split("/");
+                String[] dirs = filePath.split("/");
                 String tempPath = "";
                 for (String dir : dirs) {
                     if(null == dir || "".equals(dir))
@@ -75,16 +75,16 @@ public class FtpUtil {
                     }
                 }
             }
-
             //设置上传文件的类型为二进制类型
             ftp.setFileType(FTP.BINARY_FILE_TYPE);
+            ftp.enterLocalPassiveMode();
             //上传文件
             if (!ftp.storeFile(filename, input)) {
                 return result;
             }
+            result = true;
             input.close();
             ftp.logout();
-            result = true;
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
