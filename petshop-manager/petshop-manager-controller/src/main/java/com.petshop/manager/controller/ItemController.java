@@ -1,14 +1,12 @@
 package com.petshop.manager.controller;
 
 import com.petshop.common.pojo.EasyUIDataGridResult;
+import com.petshop.common.pojo.PetshopResult;
 import com.petshop.manager.pojo.TbItem;
 import com.petshop.manager.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 商品Contrlloer
@@ -38,5 +36,17 @@ public class ItemController {
     public EasyUIDataGridResult getItemList(Integer page,Integer rows) {
         EasyUIDataGridResult easyUIDataGridResult = itemService.getItemsList(page,rows);
         return easyUIDataGridResult;
+    }
+
+    /**
+     * 创建一个商品
+     * @param tbItem
+     * @return
+     */
+    @RequestMapping(value = "/save",method = RequestMethod.POST)
+    @ResponseBody
+    private PetshopResult createItem(TbItem tbItem,String desc)throws Exception {
+        PetshopResult result = itemService.createItem(tbItem,desc);
+        return result;
     }
 }

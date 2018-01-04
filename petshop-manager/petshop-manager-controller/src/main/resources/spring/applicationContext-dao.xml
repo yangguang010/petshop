@@ -15,7 +15,7 @@
         ">
 
     <!-- 1.配置数据库的相关参数properties的属性：${url} -->
-    <context:property-placeholder location="classpath:properties/jdbc.properties"/>
+    <context:property-placeholder location="classpath:properties/*.properties"/>
     <!-- 2. 阿里 druid 数据库连接池 -->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" destroy-method="close" >
         <!-- 数据库基本信息配置 -->
