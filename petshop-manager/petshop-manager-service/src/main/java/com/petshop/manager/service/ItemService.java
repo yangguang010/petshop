@@ -17,6 +17,6 @@ public interface ItemService {
      * @param tbItem
      * @return
      */
-    PetshopResult createItem(TbItem tbItem, String desc) throws Exception;
+    PetshopResult createItem(TbItem tbItem, String desc,String itemParam) throws Exception;
 
 }

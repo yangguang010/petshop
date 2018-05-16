@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/petshop-common/petshop-common.iml" filepath="$PROJECT_DIR$/petshop-common/petshop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-manager/petshop-manager.iml" filepath="$PROJECT_DIR$/petshop-manager/petshop-manager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-manager/petshop-manager-controller/petshop-manager-controller.iml" filepath="$PROJECT_DIR$/petshop-manager/petshop-manager-controller/petshop-manager-controller.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-manager/petshop-manager-mapper/petshop-manager-mapper.iml" filepath="$PROJECT_DIR$/petshop-manager/petshop-manager-mapper/petshop-manager-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-manager/petshop-manager-pojo/petshop-manager-pojo.iml" filepath="$PROJECT_DIR$/petshop-manager/petshop-manager-pojo/petshop-manager-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-manager/petshop-manager-service/petshop-manager-service.iml" filepath="$PROJECT_DIR$/petshop-manager/petshop-manager-service/petshop-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-parent/petshop-parent.iml" filepath="$PROJECT_DIR$/petshop-parent/petshop-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-portal/petshop-portal.iml" filepath="$PROJECT_DIR$/petshop-portal/petshop-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/petshop-restful/petshop-restful.iml" filepath="$PROJECT_DIR$/petshop-restful/petshop-restful.iml" />
+    </modules>
+  </component>
+</project>

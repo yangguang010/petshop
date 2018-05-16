@@ -19,5 +19,5 @@ public interface ItemParamService {
      * @param tbItemParam
      * @return
      */
-    PetshopResult saveItemParam(TbItemParam tbItemParam);
+    PetshopResult insertItemParam(TbItemParam tbItemParam);
 }

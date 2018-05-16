@@ -45,8 +45,8 @@ public class ItemController {
      */
     @RequestMapping(value = "/save",method = RequestMethod.POST)
     @ResponseBody
-    private PetshopResult createItem(TbItem tbItem,String desc)throws Exception {
-        PetshopResult result = itemService.createItem(tbItem,desc);
+    private PetshopResult createItem(TbItem tbItem,String desc,String itemParams)throws Exception {
+        PetshopResult result = itemService.createItem(tbItem,desc,itemParams);
         return result;
     }
 }

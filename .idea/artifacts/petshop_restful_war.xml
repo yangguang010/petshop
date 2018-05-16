@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="petshop-restful:war">
+    <output-path>$PROJECT_DIR$/petshop-restful/target</output-path>
+    <root id="archive" name="petshop-parent.war">
+      <element id="artifact" artifact-name="petshop-restful:war exploded" />
+    </root>
+  </artifact>
+</component>

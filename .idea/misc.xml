@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/petshop-manager-restful" />
+    <file type="web" url="file://$PROJECT_DIR$/petshop-manager/petshop-manager-controller" />
+    <file type="web" url="file://$PROJECT_DIR$/petshop-manager/petshop-manager-restful" />
+    <file type="web" url="file://$PROJECT_DIR$/petshop-parent/petshop-restful" />
+    <file type="web" url="file://$PROJECT_DIR$/petshop-portal" />
+    <file type="web" url="file://$PROJECT_DIR$/petshop-restful" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/petshop-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/petshop-common/pom.xml" />
+        <option value="$PROJECT_DIR$/petshop-manager/pom.xml" />
+        <option value="$PROJECT_DIR$/petshop-portal/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/petshop-manager-restful/pom.xml" />
+        <option value="$PROJECT_DIR$/petshop-manager/petshop-manager-restful/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

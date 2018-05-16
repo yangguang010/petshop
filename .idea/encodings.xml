@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/petshop-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-manager/petshop-manager-controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-manager/petshop-manager-mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-manager/petshop-manager-pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-manager/petshop-manager-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-portal" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/petshop-restful" charset="UTF-8" />
+  </component>
+</project>
